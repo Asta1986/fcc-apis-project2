@@ -24,7 +24,7 @@ app.get("/api/hello", function (req, res) {
   res.json({greeting: 'hello API'});
 });
 
-// Request Header Parse Project code
+// Request Header Parser Project code
 app.get("/api/whoami", function(req, res) {
   const ip = req.headers["x-forwarded-for"];
   const lang = req.headers["accept-language"];
